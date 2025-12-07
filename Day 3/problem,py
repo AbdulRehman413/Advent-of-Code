@@ -1,0 +1,23 @@
+def main():
+    with open("input.txt", "r") as f:
+        data = f.readlines()
+
+
+
+    total = 0
+    for ch in data:
+        ch = ch.strip()
+        max_num = 0
+        first_num = -1
+        for digit in map(int, ch):
+            if first_num != -1:
+                num = first_num * 10 + digit
+                max_num = max(num, max_num)
+            if digit > first_num:
+                first_num = digit
+
+        total += max_num
+    print(total)
+
+if __name__ == "__main__":
+    main()

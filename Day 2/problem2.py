@@ -1,39 +1,36 @@
-def is_repeating_pattern(num):
-    s = str(num)
-    n = len(s)
+def ch(n):
+    s= str(n)
+    d =len(s)
 
     
-    for p in range(1, n):
-        if n % p != 0:
+    for z in range(1,d):
+        if d %z!= 0:
             continue  
 
-        pattern = s[:p]
-        if pattern * (n // p) == s:
-            return True
+        p =s[:z]
 
+        if p*(d// z) == s:
+            return True
+        
     return False
 
 
 def main():
-    with open ("input.txt", "r") as f:
+    with open("input.txt", "r")as f:
         data = f.readlines()
 
-    
+
     stack = []
    
-
     for i in data:
         i = i.strip()
-        
         ranges = i.split(",")
-
         for r in ranges:
-            start , end = map(int, r.split("-"))
-
-            for k in range(start, end+1):
-                if is_repeating_pattern(k):
-                    stack.append(k)
-                        
+                st,e = map(int,r.split("-"))
+                for k in range(st, e+1):
+                    if ch(k):
+                        stack.append(k)
+                            
 
     print(sum(stack))
                         
