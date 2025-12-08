@@ -2,7 +2,7 @@ def main():
     with open("input.txt", "r") as f:
         data = f.readlines()
 
-
+    
 
     total = 0
     for ch in data:
