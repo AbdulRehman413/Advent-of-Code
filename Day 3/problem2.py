@@ -1,5 +1,5 @@
 def check(num_str, k):
-    drop = len(num_str) - k
+    drop = len(num_str) -k
     stack = []
 
     for digit in num_str:
