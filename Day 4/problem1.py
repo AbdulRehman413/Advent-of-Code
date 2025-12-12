@@ -47,7 +47,7 @@ def simulate_removal(grid):
 
 
 def main():
-    grid = []
+    grid =[]
 
     with open("input.txt", "r") as f:
         for line in f:
