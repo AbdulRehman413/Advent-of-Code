@@ -6,7 +6,7 @@ def count_timelines_from_file(filename="input.txt"):
     if not lines:
         return 0
 
-    rows = len(lines)
+    rows =len(lines)
     cols = max(len(l) for l in lines)
     grid = [list(l.ljust(cols)) for l in lines]
 
