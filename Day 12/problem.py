@@ -28,7 +28,7 @@ def main():
     filepath = "input.txt"
     shape_areas, regions = parse(filepath)
 
-    result1 = 0
+    result1 =0
     for w, h, counts in regions:
         needed = sum(a * c for a, c in zip(shape_areas, counts))
         if needed <= w * h:
