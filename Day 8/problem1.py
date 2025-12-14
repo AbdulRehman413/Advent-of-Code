@@ -10,7 +10,7 @@ class DSU:
     def find(self, a):
         while self.parent[a] != a:
             self.parent[a] = self.parent[self.parent[a]]
-            a = self.parent[a]
+            a =self.parent[a]
         return a
 
     def union(self, a, b):
