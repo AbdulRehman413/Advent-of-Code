@@ -48,8 +48,8 @@ def main():
             if area > result2 and validate_rectangle(x1, y1, x2, y2):
                 result2 = area
 
-    print(f"Solution for Part 1: {result1}")
-    print(f"Solution for Part 2: {result2}")
+    print(result1)
+    print(result2)
 
 
 if __name__ == "__main__":
