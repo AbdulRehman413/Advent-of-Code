@@ -7,7 +7,7 @@ def main():
         print(0)
         return
 
-    height = len(lines)
+    height =len(lines)
     width = max(len(line) for line in lines)
     
     lines = [line.ljust(width) for line in lines]
