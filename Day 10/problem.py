@@ -88,8 +88,8 @@ def main() -> None:
         result1 += min_presses_part1(target, button_masks)
         result2 += min_presses_part2(jolts, button_tuples)
 
-    print(f"Solution for Part 1: {result1}")
-    print(f"Solution for Part 2: {result2}")
+    print(result1)
+    print(result2)
 
 
 if __name__ == "__main__":
