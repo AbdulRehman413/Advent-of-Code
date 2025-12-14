@@ -3,7 +3,7 @@ def main():
     with open("input.txt", "r") as f:
         lines = [line.rstrip("\n") for line in f]
 
-    height = len(lines)
+    height =len(lines)
     width = max(len(line) for line in lines)
 
     
