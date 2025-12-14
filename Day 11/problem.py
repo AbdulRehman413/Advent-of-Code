@@ -42,8 +42,8 @@ def main():
             local_result += dp2[(nxt, fft, dac)]
         return local_result
 
-    print(f"Solution for Part 1: {dfs1('you')}")
-    print(f"Solution for Part 2: {dfs2('svr', False, False)}")
+    print(dfs1('you'))
+    print(dfs2('svr', False, False))
 
 
 if __name__ == "__main__":
