@@ -2,7 +2,7 @@ def main():
     with open("input.txt", "r") as f:
         lines = [line.strip() for line in f.readlines()]
 
-    # Split into ranges and IDs
+    
     blank_index = lines.index("")   # find blank line
 
     range_lines = lines[:blank_index]
