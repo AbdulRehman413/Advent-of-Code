@@ -71,7 +71,7 @@ def solve(filename="input.txt"):
     sizes = sorted(comp.values(), reverse=True)
 
    
-    return sizes[0] * sizes[1] * sizes[2]
+    return sizes[0] *sizes[1] * sizes[2]
 
 
 
