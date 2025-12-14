@@ -6,7 +6,7 @@ def count_splits_from_file(filename="input.txt"):
     if not lines:
         return 0
 
-    rows = len(lines)
+    rows =len(lines)
     cols = max(len(line) for line in lines)
    
     grid = [list(line.ljust(cols)) for line in lines]
